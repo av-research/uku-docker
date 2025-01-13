@@ -1,0 +1,8 @@
+prefix=/code/sm_ws/install
+
+Name: urdf_calibration
+Description: Description of urdf_calibration
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

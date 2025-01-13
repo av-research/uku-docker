@@ -1,0 +1,8 @@
+prefix=/code/sm_ws/install
+
+Name: umrr_driver
+Description: Description of umrr_driver
+Version: 1.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

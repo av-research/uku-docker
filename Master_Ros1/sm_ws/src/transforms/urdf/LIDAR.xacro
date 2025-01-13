@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="LIDAR_xyz" value="-.015 0.0 .295"/>
+    <xacro:property name="LIDAR_rot" value="0.0 0.0 0.0"/>
+
+    <!-- LIDAR Link-->
+    <link name="LIDAR" type="fixed">
+    </link>
+    <joint name="LIDAR_joint" type="fixed">
+        <parent link="zero_point"/>
+        <child link="LIDAR"/>
+        <origin xyz="${LIDAR_xyz}" rpy="${LIDAR_rot}"/>
+    </joint>
+    <link name="velodyne" type="fixed">
+    </link>
+    <joint name="velodyne_joint" type="fixed">
+        <parent link="LIDAR"/>
+        <child link="velodyne"/>
+        <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
+    </joint>
+</robot>

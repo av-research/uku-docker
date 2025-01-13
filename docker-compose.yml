@@ -1,0 +1,59 @@
+services:
+
+  ros2_bridge:
+    build: ./ROS2_Bridge
+    image: ros2_bridge
+    network_mode: host
+    volumes:
+      - "/dev/shm:/dev/shm"
+    container_name: ros2_bridge
+
+  zadar:
+    build: ./Zadar
+    image: zadar_driver
+    network_mode: host
+    # The Zadar Labs driver requires access to xcb/display, this could probably
+    # be fixed in the future
+    volumes:
+      - "./Zadar:/code"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+      - "/dev/shm:/dev/shm"
+    devices:
+      - "/dev/dri:/dev/dri"
+    environment:
+      DISPLAY: :0
+    container_name: zadar
+    
+  smartmicro_ros1:
+    build: ./Master_Ros1
+    image: master_ros1
+    network_mode: host
+    volumes:
+      - "./SM_Ros1:/code"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+      - "/dev/shm:/dev/shm"
+    devices:
+      - "/dev/dri:/dev/dri"
+    entrypoint:
+      - "/code/entry.sh"
+    environment:
+      DISPLAY: :0
+    container_name: smartmicro_ros1
+    
+  master_ros1:
+    build: ./Master_Ros1
+    image: master_ros1
+    network_mode: host
+    volumes:
+      - "./Master_Ros1:/code"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+      - "/dev/shm:/dev/shm"
+    devices:
+      - "/dev/dri:/dev/dri"
+      - "/dev/video2:/dev/video2"
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
+    entrypoint:
+      - "/code/entry.sh"
+    environment:
+      DISPLAY: :0
+    container_name: master_ros1

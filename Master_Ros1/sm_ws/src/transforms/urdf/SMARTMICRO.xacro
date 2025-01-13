@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="SMARTMICRO_xyz" value=".323 -.013 -.5145"/>
+    <xacro:property name="SMARTMICRO_rot" value="0.0 0.0 0.0"/>
+    <xacro:property name="SMARTMICRO_z_t2c" value=".4875"/>
+
+    <!-- SMARTMICRO Link-->
+    <link name="SMARTMICRO" type="fixed">
+    </link>
+    <joint name="SMARTMICRO_joint" type="fixed">
+        <parent link="zero_point"/>
+        <child link="SMARTMICRO"/>
+        <origin xyz="${SMARTMICRO_xyz}" rpy="${SMARTMICRO_rot}"/>
+    </joint>
+    
+    <link name="radar" type="fixed">
+    </link>
+    <joint name="radar_joint" type="fixed">
+        <parent link="SMARTMICRO"/>
+        <child link="radar"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    
+</robot>

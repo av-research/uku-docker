@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- UKU Properties, Values in Meters-->
+    <xacro:property name="zero_x_offset" value=".335"/>
+    <xacro:property name="zero_y_offset" value="0"/>
+    <xacro:property name="zero_z_offset" value=".913"/>
+    <xacro:property name="zero_rot" value="0 0 0"/>
+    
+    <!-- Base Link, this is our origin point for all UKU joints-->
+    <link name="base_link">
+    	<origin xyz="0 0 0" rpy="1.5708 0 0"/>
+    </link>
+
+    <!-- UKU Zero Point-->
+    <link name="zero_point" type="fixed">
+    </link>
+        <joint name="zero_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="zero_point"/>
+        <origin xyz="${zero_x_offset} ${zero_y_offset} ${zero_z_offset}" rpy="${zero_rot}"/>
+    </joint>
+
+</robot>

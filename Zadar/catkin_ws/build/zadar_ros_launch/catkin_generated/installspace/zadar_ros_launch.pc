@@ -1,0 +1,8 @@
+prefix=/code/catkin_ws/install
+
+Name: zadar_ros_launch
+Description: Description of zadar_ros_launch
+Version: 2.7.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

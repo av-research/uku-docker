@@ -1,0 +1,8 @@
+prefix=/code/sm_ws/install
+
+Name: multi_sensor_calibration_launch
+Description: Description of multi_sensor_calibration_launch
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

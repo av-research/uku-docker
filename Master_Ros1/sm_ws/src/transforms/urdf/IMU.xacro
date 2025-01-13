@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="IMU_xyz" value="-1.045 -.041 -.103"/>
+    <xacro:property name="IMU_rot" value="0.0 0.0 0.0"/>
+
+    <!-- IMU Link-->
+    <link name="IMU" type="fixed">
+    </link>
+    <joint name="IMU_joint" type="fixed">
+        <parent link="zero_point"/>
+        <child link="IMU"/>
+        <origin xyz="${IMU_xyz}" rpy="${IMU_rot}"/>
+    </joint>
+    
+</robot>

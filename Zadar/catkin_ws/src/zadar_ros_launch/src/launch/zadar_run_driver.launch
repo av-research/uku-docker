@@ -1,0 +1,19 @@
+<launch>
+    <arg name="radar_num"               value="1"       />
+    <arg name="radar_types"             value="zsignal"   />
+    <arg name="radar_serial_numbers"    value="0324AC001"   />
+    <arg name="mode_ids"                value="1"       />
+    <arg name="enable_viewer"           value="on"      />
+    <arg name="enable_log"              value="on"     />
+    <!-- Launch the node with arguments -->
+    <node name="run" pkg="zadar_ros_launch" type="run_radar.sh" output="screen" cwd="node"
+        args="
+            $(arg radar_num) 
+            $(arg radar_types) 
+            $(arg radar_serial_numbers)
+            $(arg mode_ids)
+            $(arg enable_viewer)
+            $(arg enable_log)
+        "
+    />
+</launch>

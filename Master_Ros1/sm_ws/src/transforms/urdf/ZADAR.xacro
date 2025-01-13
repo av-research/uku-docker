@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:property name="ZADAR_xyz" value=".331 .063 .011"/>
+    <xacro:property name="ZADAR_rot" value="0.0 0.0 0.0"/>
+    <xacro:property name="ZADAR_z_t2c" value=".039"/>
+    <xacro:property name="ZADAR_y_e2c" value=".035"/>
+    <xacro:property name="ZADAR_x_b2c" value=".026"/>
+
+    <!-- ZADAR Link-->
+    <link name="zadar" type="fixed">
+    </link>
+    <joint name="ZADAR_joint" type="fixed">
+        <parent link="zero_point"/>
+        <child link="zadar"/>
+        <origin xyz="${ZADAR_xyz}" rpy="${ZADAR_rot}"/>
+    </joint>
+</robot>

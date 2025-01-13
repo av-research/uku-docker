@@ -1,0 +1,5 @@
+Two outdoor runs with UKU and zadar/smartmicro -- second run broken into three rosbags.
+Both start with an initial stationary calibration target and then run in a similar circuit with trees.
+
+Divided into first.run and second.run
+Ros Topics for each in respective files

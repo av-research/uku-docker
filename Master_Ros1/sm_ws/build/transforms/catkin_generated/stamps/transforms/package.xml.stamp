@@ -1,0 +1,13 @@
+<package>
+  <name>transforms</name>
+  <version>0.0.1</version>
+  <description>UKU Transforms</description>
+  <maintainer email="daedel@taltech.ee">dan</maintainer>
+  <license>Apache License 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roslaunch</build_depend>
+  <run_depend>robot_state_publisher</run_depend>
+  <run_depend>xacro</run_depend>
+
+</package>

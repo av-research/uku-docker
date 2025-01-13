@@ -1,0 +1,7 @@
+set(optimization_SETUP_PY_SETUP_MODULE "distutils.core")
+set(optimization_SETUP_PY_VERSION "0.0.0")
+set(optimization_SETUP_PY_SCRIPTS "")
+set(optimization_SETUP_PY_PACKAGES "optimization")
+set(optimization_SETUP_PY_PACKAGE_DIRS "lib/icp/optimization")
+set(optimization_SETUP_PY_MODULES "")
+set(optimization_SETUP_PY_MODULE_DIRS "")

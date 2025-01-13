@@ -1,0 +1,23 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~enable_filter_range" : \b [bool] Enable range filtering. min: False, default: False, max: True
+- \b "~min_range" : \b [double] Minimum range [m]. min: 0.0, default: 0.0, max: 175.0
+- \b "~max_range" : \b [double] Minimum range [m]. min: 0.0, default: 175.0, max: 175.0
+- \b "~enable_azimuth_filter" : \b [bool] Enable azimuth filtering. min: False, default: False, max: True
+- \b "~min_azimuth_angle" : \b [double] Minimum azimuth angle [°] min: -90.0, default: -90.0, max: 90.0
+- \b "~max_azimuth_angle" : \b [double] Maximum azimuth angle [°] min: -90.0, default: 90.0, max: 90.0
+- \b "~enable_elevation_filter" : \b [bool] Enable elevation filtering. min: False, default: False, max: True
+- \b "~min_elevation_angle" : \b [double] Minimum elevation angle [°] min: -90.0, default: -90.0, max: 90.0
+- \b "~max_elevation_angle" : \b [double] Maximum elevation angle [°] min: -90.0, default: 90.0, max: 90.0
+- \b "~enable_radial_speed_filter" : \b [bool] Enable radial speed filtering. min: False, default: False, max: True
+- \b "~min_radial_speed" : \b [double] Minimum radial speed [m/s]. min: -50.0, default: -50.0, max: 50.0
+- \b "~max_radial_speed" : \b [double] Maximum radial speed [m/s]. min: -50.0, default: 50.0, max: 50.0
+- \b "~enable_rcs_filter" : \b [bool] Enable radar cross section filtering. min: False, default: False, max: True
+- \b "~min_rcs" : \b [double] Minimum radar cross section [db]. min: -5.0, default: -5.0, max: 50.0
+- \b "~max_rcs" : \b [double] Maximum radar cross section [db]. min: -5.0, default: 50.0, max: 50.0
+- \b "~enable_snr_filter" : \b [bool] Enable signal to noise ratio filtering. min: False, default: False, max: True
+- \b "~min_snr" : \b [double] Minimum signal to noise ratio [dB]. min: 0.0, default: 0.0, max: 130.0
+- \b "~max_snr" : \b [double] Maximum signal to noise ratio [dB]. min: 0.0, default: 130.0, max: 130.0
+

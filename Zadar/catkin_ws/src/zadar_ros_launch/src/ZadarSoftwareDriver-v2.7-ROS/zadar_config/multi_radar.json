@@ -1,0 +1,819 @@
+{
+    "radar_number": 2,
+    "runtime_mode": "live",
+    "dqe_mode": "vehicle",
+    "teardown_on_quit": true,
+    "reset_sensors": true,
+    "bus_clock_sync_enabled": false,
+    "bus_sync_clock_topic": "/clock",
+    "viewer_settings": {
+        "color_mode": 1,
+        "field_of_view": 44,
+        "cluster_size": 4,
+        "track_medium_speed_color_treshold": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+        ],
+        "track_fast_speed_color_treshold": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+        ],
+        "show_track_label": false,
+        "is_cartesian_grid": true,
+        "keep_last_points": true,
+        "point_size": 3.955,
+        "dynamic_point_size": 3.933,
+        "track_size": 4,
+        "viewer_3d_grid_max_x": 20,
+        "viewer_3d_grid_max_y": 20,
+        "viewer_3d_grid_scale_y": 1.0,
+        "viewer_3d_grid_step_x": 2,
+        "viewer_3d_grid_step_y": 2,
+        "coloring": {
+            "grid_transparency": 0.5,
+            "minz": -5,
+            "maxz": 5,
+            "scheme": 0,
+            "max_range": 20,
+            "min_range": 0,
+            "min_doppler": -0.5,
+            "max_doppler": 0.5,
+            "min_snr": 0,
+            "max_snr": 1000
+        }
+    },
+    "radar0": {
+        "radar_type": "zProx",
+        "serial_number": "2921BA006",
+        "name": "zProx (0)",
+        "config": "./zadar_config/zprox/cfg/0_za_3d_20m_512.bin",
+        "calibration": "",
+        "config_mode": "dynamic",
+        "frame_id": "",
+        "radar_visible": true,
+        "mode": 20,
+        "data_bus_settings": {
+            "interface": "can",
+            "config_num": 0,
+            "pps_mode": 0,
+            "can_node_id": 3,
+            "command_port": "/dev/ttyUSB2",
+            "command_rate": 115200,
+            "data_rate": 3000000,
+            "data_port": "/dev/ttyUSB1",
+            "can_bus_num": 0,
+            "ip_addr": "",
+            "port": 7777
+        },
+        "firmware_settings": {
+            "sbl_version": "0.1.6.0",
+            "fw_version": "1.1.0.0",
+            "fw_msg_logfile": "",
+            "report_fw_debug_msgs": false
+        },
+        "calibration_settings": {
+            "calibrated": true,
+            "origin_type": 0,
+            "max_folding_doppler": 6.8,
+            "subframe_duration_ms": 25,
+            "phi": 0,
+            "psi": 0,
+            "theta": 0,
+            "x": 0,
+            "y": 0,
+            "z": 0.0,
+            "vehicle_lenght": 5.0,
+            "vehicle_width": 2.0
+        },
+        "filtering": {
+            "remove_fake_target": true,
+            "front_points_only": true,
+            "range": {
+                "range1": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0.1,
+                    "min": 0,
+                    "min_power": 2,
+                    "min_snr": 2
+                },
+                "range2": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                },
+                "range3": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                },
+                "range4": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                },
+                "range5": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                }
+            },
+            "common": {
+                "min_doppler1": -1000,
+                "max_doppler1": 1000,
+                "min_doppler2": -1000,
+                "max_doppler2": 1000,
+                "min_range": 0,
+                "max_range": 1000,
+                "min_x": -1000,
+                "max_x": 1000,
+                "min_y": -1000,
+                "max_y": 1000,
+                "min_z": -1000,
+                "max_z": 1000,
+                "min_snr": 0
+            },
+            "dynamic": {
+                "min_doppler1": -1000,
+                "max_doppler1": 1000,
+                "min_doppler2": -1000,
+                "max_doppler2": 1000,
+                "min_range": 0,
+                "max_range": 1000,
+                "min_x": -1000,
+                "max_x": 1000,
+                "min_y": -1000,
+                "max_y": 1000,
+                "min_z": -1000,
+                "max_z": 1000,
+                "min_snr": 0
+            },
+            "static": {
+                "min_doppler1": -1000,
+                "max_doppler1": 1000,
+                "min_doppler2": -1000,
+                "max_doppler2": 1000,
+                "min_range": 0,
+                "max_range": 1000,
+                "min_x": -1000,
+                "max_x": 1000,
+                "min_y": -1000,
+                "max_y": 1000,
+                "min_z": -1000,
+                "max_z": 1000,
+                "min_snr": 0
+            },
+            "fences": {
+                "use_fences_removal": false,
+                "fences_visible": false
+            },
+            "background_removal": {
+                "use_background_removal": false,
+                "num_integration": 50
+            },
+            "filtering_target": {
+                "consider_static_points": false,
+                "doppler_threshold": 2.0,
+                "positive_identification_count": 2,
+                "range_threshold": 0.5,
+                "subframes_count": 8,
+                "check_disabled": false,
+                "check_unfold_doppler": true
+            }
+        },
+        "point_integration_settings": {
+            "ego_estimation_en": true,
+            "ego_estimation_dynamic_en": false,
+            "static_subframes_count": 10,
+            "sliding_subframes_count": 4,
+            "static_doppler_threshold": 1.5,
+            "omega_estimation_frames": 14,
+            "invalid_dyn_point_percentage": 60,
+            "outlier_removal": 3,
+            "snr_removal": 0,
+            "binary_grid_angle_resolution": 1,
+            "range_grid_window_min_size": 6,
+            "doppler_grid_resolution": 0.1,
+            "doppler_grid_window_size": 0.3,
+            "kf_omega_r0": 0.8,
+            "kf_omega_r1": 0.8,
+            "kf_omega_t": 0.3,
+            "kf_omega_q0": 0.05,
+            "kf_omega_q1": 0.05,
+            "kf_vx_r0": 0.2,
+            "kf_vx_r1": 1,
+            "kf_vx_t": 1,
+            "kf_vx_q0": 0.05,
+            "kf_vx_q1": 0.05,
+            "kf_vy_r0": 0.2,
+            "kf_vy_r1": 1,
+            "kf_vy_t": 1,
+            "kf_vy_q0": 0.05,
+            "kf_vy_q1": 0.05,
+            "omega_estimation_sweep_num": 27,
+            "omega_estimation_sweep_delta": 0.5,
+            "omega_estimation_max_center_sweep": 0.5
+        },
+        "clustering": {
+            "filter_dynamic": false,
+            "filter_static": true,
+            "clustered_points_visible": true,
+            "clustered_points_only": false,
+            "en_only_clustering_dynamic": false,
+            "enable_cluster_interpolation": false,
+            "filter_dynamic_points_not_clustered": true,
+            "clusters_boxes_visible": false,
+            "clusters_centers_visible": false,
+            "enable_clustering": true,
+            "N_max": 20,
+            "azimuth_factor": 0.4,
+            "cluster_min_num_points": 4,
+            "disparsity": 36.0,
+            "doppler_factor": 2,
+            "doppler_res": 0.35,
+            "elevation_factor": 0.1,
+            "eps": 16,
+            "hca_azimuth_factor": 0.4,
+            "hca_doppler_factor": 1,
+            "hca_elevation_factor": 0.05,
+            "min_power_factor": 0.5,
+            "n_doppler_bins": 128,
+            "n_range_bins": 128,
+            "num_between_doppler": 2,
+            "num_between_phi": -1,
+            "num_between_r": 2,
+            "num_between_theta": 2,
+            "phi_res": 0.7,
+            "range_res": 0.3,
+            "snr_factor": 1,
+            "snr_factor_remove_points": true,
+            "snr_reduce_value": 30,
+            "theta_res": 1.4,
+            "win_doppler_sigma": 1,
+            "win_phi_sigma": 0.37,
+            "win_r_sigma": 0.65,
+            "win_theta_sigma": 0.5,
+            "num_integration": 50,
+            "snr_coefficient": 1.0
+        },
+        "advanced_clustering": {
+            "enable_advanced_clustering": false,
+            "config_active_1": true,
+            "config_active_2": false,
+            "default_configs": {
+                "len_pcl": 100000,
+                "min_num_points": 0,
+                "res_x": 1,
+                "res_y": 1,
+                "sigma": 0.5,
+                "threshold_rel": 0.5
+            },
+            "section_1": {
+                "config": {
+                    "len_pcl": 8,
+                    "min_num_points": 5,
+                    "res_x": 0.8,
+                    "res_y": 0.8,
+                    "sigma": 0.5,
+                    "threshold_rel": 0.1
+                },
+                "filters": {
+                    "max_abs_angle": 100,
+                    "max_abs_doppler": 50,
+                    "max_range": 800,
+                    "min_range": 0
+                }
+            },
+            "section_2": {
+                "config": {
+                    "len_pcl": 4000,
+                    "min_num_points": 10,
+                    "res_x": 1,
+                    "res_y": 1,
+                    "sigma": 0.5,
+                    "threshold_rel": 0.2
+                },
+                "filters": {
+                    "max_abs_angle": 0,
+                    "max_abs_doppler": 0,
+                    "max_range": 0,
+                    "min_range": 0
+                }
+            }
+        },
+        "tracking": {
+            "tracks_visible": true,
+            "enable_tracking": false,
+            "general": {
+                "MAX_COST": 10000,
+                "distance_threshold": 1000,
+                "dopp_factor": 1,
+                "gating_doppler_threshold": 4,
+                "log_state": false,
+                "use_z": false,
+                "enable_range_based_initiation": true,
+                "range_threshold_for_initiation": 40.0,
+                "enable_z_history_based_filtering": true,
+                "z_limits_to_remove_flying_tracks": 3.0
+            },
+            "thrs": {
+                "acc_thr": 100000,
+                "confirmed": {
+                    "comb": 7,
+                    "d": 5,
+                    "x": 5,
+                    "y": 5,
+                    "z": 5
+                },
+                "doppler_condition": 100000,
+                "num_doppler_condition": 5,
+                "query_distance": {
+                    "d": 2,
+                    "x": 2,
+                    "y": 2,
+                    "z": 2
+                },
+                "query_radius": 10,
+                "tentative": {
+                    "comb": 7,
+                    "d": 5,
+                    "x": 5,
+                    "y": 5,
+                    "z": 5
+                },
+                "velocity_condition": 100000,
+                "wait_for_data": {
+                    "comb": 10,
+                    "d": 10,
+                    "x": 10,
+                    "y": 10,
+                    "z": 10
+                }
+            },
+            "thrs_with_doppler": {
+                "acc_thr": 100000,
+                "confirmed": {
+                    "comb": 5,
+                    "d": 5,
+                    "x": 4,
+                    "y": 4,
+                    "z": 4
+                },
+                "doppler_condition": 100000,
+                "num_doppler_condition": 5,
+                "query_distance": {
+                    "d": 2,
+                    "x": 2,
+                    "y": 2,
+                    "z": 2
+                },
+                "query_radius": 10,
+                "tentative": {
+                    "comb": 6,
+                    "d": 5,
+                    "x": 4,
+                    "y": 4,
+                    "z": 4
+                },
+                "velocity_condition": 100000,
+                "wait_for_data": {
+                    "comb": 10,
+                    "d": 10,
+                    "x": 5,
+                    "y": 5,
+                    "z": 5
+                }
+            },
+            "track": {
+                "KF_R_mat_doppler_mes_noise_factor": 1,
+                "R_identity_initial_factor": 2,
+                "age_threshold": 100,
+                "age_threshold_stopped": 100,
+                "alpha": 0.1,
+                "data_wait_for_data_hist_buffer_size": 3,
+                "delta_t": 0.1,
+                "doppler_adaptive_in_loop_threshold": 4,
+                "kalman_inner_velocity_static_threshold": 2,
+                "l_value": 30,
+                "len_goodness_count": 10,
+                "low_doppler_m_out_of_n": 25,
+                "m_out_of_n": 15,
+                "n_value": 30,
+                "num_confirmed_measurements_threshold": 10,
+                "num_points_before_active_thr": 1,
+                "sigma_a": 0.01,
+                "stop_thr": 1,
+                "t_out_of_l": 25,
+                "l": 30,
+                "n": 30
+            }
+        }
+    },
+    "radar1": {
+        "radar_type": "zProx",
+        "serial_number": "4423BB006",
+        "name": "zProx (0)",
+        "config": "workspace/src/zadar_config/zprox/cfg/0_za_3d_20m_512.cfg",
+        "calibration": "",
+        "config_mode": "dynamic",
+        "frame_id": "",
+        "radar_visible": true,
+        "mode": 20,
+        "data_bus_settings": {
+            "interface": "can",
+            "config_num": 0,
+            "pps_mode": 0,
+            "can_node_id": 3,
+            "command_port": "/dev/ttyUSB2",
+            "command_rate": 115200,
+            "data_rate": 3000000,
+            "data_port": "/dev/ttyUSB1",
+            "can_bus_num": 0,
+            "ip_addr": "",
+            "port": 7777
+        },
+        "firmware_settings": {
+            "sbl_version": "0.1.6.0",
+            "fw_version": "1.1.0.0",
+            "fw_msg_logfile": "",
+            "report_fw_debug_msgs": false
+        },
+        "calibration_settings": {
+            "calibrated": true,
+            "origin_type": 0,
+            "max_folding_doppler": 6.8,
+            "subframe_duration_ms": 25,
+            "phi": 0,
+            "psi": 0,
+            "theta": 0,
+            "x": 0,
+            "y": 0,
+            "z": 0.0,
+            "vehicle_lenght": 5.0,
+            "vehicle_width": 2.0
+        },
+        "filtering": {
+            "remove_fake_target": true,
+            "front_points_only": true,
+            "range": {
+                "range1": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0.1,
+                    "min": 0,
+                    "min_power": 2,
+                    "min_snr": 2
+                },
+                "range2": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                },
+                "range3": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                },
+                "range4": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                },
+                "range5": {
+                    "filter_dynamic": true,
+                    "filter_static": true,
+                    "max": 0,
+                    "min": 0,
+                    "min_power": 0,
+                    "min_snr": 0
+                }
+            },
+            "common": {
+                "min_doppler1": -1000,
+                "max_doppler1": 1000,
+                "min_doppler2": -1000,
+                "max_doppler2": 1000,
+                "min_range": 0,
+                "max_range": 1000,
+                "min_x": -1000,
+                "max_x": 1000,
+                "min_y": -1000,
+                "max_y": 1000,
+                "min_z": -1000,
+                "max_z": 1000,
+                "min_snr": 0
+            },
+            "dynamic": {
+                "min_doppler1": -1000,
+                "max_doppler1": 1000,
+                "min_doppler2": -1000,
+                "max_doppler2": 1000,
+                "min_range": 0,
+                "max_range": 1000,
+                "min_x": -1000,
+                "max_x": 1000,
+                "min_y": -1000,
+                "max_y": 1000,
+                "min_z": -1000,
+                "max_z": 1000,
+                "min_snr": 0
+            },
+            "static": {
+                "min_doppler1": -1000,
+                "max_doppler1": 1000,
+                "min_doppler2": -1000,
+                "max_doppler2": 1000,
+                "min_range": 0,
+                "max_range": 1000,
+                "min_x": -1000,
+                "max_x": 1000,
+                "min_y": -1000,
+                "max_y": 1000,
+                "min_z": -1000,
+                "max_z": 1000,
+                "min_snr": 0
+            },
+            "fences": {
+                "use_fences_removal": false,
+                "fences_visible": false
+            },
+            "background_removal": {
+                "use_background_removal": false,
+                "num_integration": 50
+            },
+            "filtering_target": {
+                "consider_static_points": false,
+                "doppler_threshold": 2.0,
+                "positive_identification_count": 2,
+                "range_threshold": 0.5,
+                "subframes_count": 8,
+                "check_disabled": false,
+                "check_unfold_doppler": true
+            }
+        },
+        "point_integration_settings": {
+            "ego_estimation_en": true,
+            "ego_estimation_dynamic_en": false,
+            "static_subframes_count": 10,
+            "sliding_subframes_count": 4,
+            "static_doppler_threshold": 1.5,
+            "omega_estimation_frames": 14,
+            "invalid_dyn_point_percentage": 60,
+            "outlier_removal": 3,
+            "snr_removal": 0,
+            "binary_grid_angle_resolution": 1,
+            "range_grid_window_min_size": 6,
+            "doppler_grid_resolution": 0.1,
+            "doppler_grid_window_size": 0.3,
+            "kf_omega_r0": 0.8,
+            "kf_omega_r1": 0.8,
+            "kf_omega_t": 0.3,
+            "kf_omega_q0": 0.05,
+            "kf_omega_q1": 0.05,
+            "kf_vx_r0": 0.2,
+            "kf_vx_r1": 1,
+            "kf_vx_t": 1,
+            "kf_vx_q0": 0.05,
+            "kf_vx_q1": 0.05,
+            "kf_vy_r0": 0.2,
+            "kf_vy_r1": 1,
+            "kf_vy_t": 1,
+            "kf_vy_q0": 0.05,
+            "kf_vy_q1": 0.05,
+            "omega_estimation_sweep_num": 27,
+            "omega_estimation_sweep_delta": 0.5,
+            "omega_estimation_max_center_sweep": 0.5
+        },
+        "clustering": {
+            "filter_dynamic": false,
+            "filter_static": true,
+            "clustered_points_visible": true,
+            "clustered_points_only": false,
+            "en_only_clustering_dynamic": false,
+            "enable_cluster_interpolation": false,
+            "filter_dynamic_points_not_clustered": true,
+            "clusters_boxes_visible": false,
+            "clusters_centers_visible": false,
+            "enable_clustering": true,
+            "N_max": 20,
+            "azimuth_factor": 0.4,
+            "cluster_min_num_points": 4,
+            "disparsity": 36.0,
+            "doppler_factor": 2,
+            "doppler_res": 0.35,
+            "elevation_factor": 0.1,
+            "eps": 16,
+            "hca_azimuth_factor": 0.4,
+            "hca_doppler_factor": 1,
+            "hca_elevation_factor": 0.05,
+            "min_power_factor": 0.5,
+            "n_doppler_bins": 128,
+            "n_range_bins": 128,
+            "num_between_doppler": 2,
+            "num_between_phi": -1,
+            "num_between_r": 2,
+            "num_between_theta": 2,
+            "phi_res": 0.7,
+            "range_res": 0.3,
+            "snr_factor": 1,
+            "snr_factor_remove_points": true,
+            "snr_reduce_value": 30,
+            "theta_res": 1.4,
+            "win_doppler_sigma": 1,
+            "win_phi_sigma": 0.37,
+            "win_r_sigma": 0.65,
+            "win_theta_sigma": 0.5,
+            "num_integration": 50,
+            "snr_coefficient": 1.0
+        },
+        "advanced_clustering": {
+            "enable_advanced_clustering": false,
+            "config_active_1": true,
+            "config_active_2": false,
+            "default_configs": {
+                "len_pcl": 100000,
+                "min_num_points": 0,
+                "res_x": 1,
+                "res_y": 1,
+                "sigma": 0.5,
+                "threshold_rel": 0.5
+            },
+            "section_1": {
+                "config": {
+                    "len_pcl": 8,
+                    "min_num_points": 5,
+                    "res_x": 0.8,
+                    "res_y": 0.8,
+                    "sigma": 0.5,
+                    "threshold_rel": 0.1
+                },
+                "filters": {
+                    "max_abs_angle": 100,
+                    "max_abs_doppler": 50,
+                    "max_range": 800,
+                    "min_range": 0
+                }
+            },
+            "section_2": {
+                "config": {
+                    "len_pcl": 4000,
+                    "min_num_points": 10,
+                    "res_x": 1,
+                    "res_y": 1,
+                    "sigma": 0.5,
+                    "threshold_rel": 0.2
+                },
+                "filters": {
+                    "max_abs_angle": 0,
+                    "max_abs_doppler": 0,
+                    "max_range": 0,
+                    "min_range": 0
+                }
+            }
+        },
+        "tracking": {
+            "tracks_visible": true,
+            "enable_tracking": false,
+            "general": {
+                "MAX_COST": 10000,
+                "distance_threshold": 1000,
+                "dopp_factor": 1,
+                "gating_doppler_threshold": 4,
+                "log_state": false,
+                "use_z": false,
+                "enable_range_based_initiation": true,
+                "range_threshold_for_initiation": 40.0,
+                "enable_z_history_based_filtering": true,
+                "z_limits_to_remove_flying_tracks": 3.0
+            },
+            "thrs": {
+                "acc_thr": 100000,
+                "confirmed": {
+                    "comb": 7,
+                    "d": 5,
+                    "x": 5,
+                    "y": 5,
+                    "z": 5
+                },
+                "doppler_condition": 100000,
+                "num_doppler_condition": 5,
+                "query_distance": {
+                    "d": 2,
+                    "x": 2,
+                    "y": 2,
+                    "z": 2
+                },
+                "query_radius": 10,
+                "tentative": {
+                    "comb": 7,
+                    "d": 5,
+                    "x": 5,
+                    "y": 5,
+                    "z": 5
+                },
+                "velocity_condition": 100000,
+                "wait_for_data": {
+                    "comb": 10,
+                    "d": 10,
+                    "x": 10,
+                    "y": 10,
+                    "z": 10
+                }
+            },
+            "thrs_with_doppler": {
+                "acc_thr": 100000,
+                "confirmed": {
+                    "comb": 5,
+                    "d": 5,
+                    "x": 4,
+                    "y": 4,
+                    "z": 4
+                },
+                "doppler_condition": 100000,
+                "num_doppler_condition": 5,
+                "query_distance": {
+                    "d": 2,
+                    "x": 2,
+                    "y": 2,
+                    "z": 2
+                },
+                "query_radius": 10,
+                "tentative": {
+                    "comb": 6,
+                    "d": 5,
+                    "x": 4,
+                    "y": 4,
+                    "z": 4
+                },
+                "velocity_condition": 100000,
+                "wait_for_data": {
+                    "comb": 10,
+                    "d": 10,
+                    "x": 5,
+                    "y": 5,
+                    "z": 5
+                }
+            },
+            "track": {
+                "KF_R_mat_doppler_mes_noise_factor": 1,
+                "R_identity_initial_factor": 2,
+                "age_threshold": 100,
+                "age_threshold_stopped": 100,
+                "alpha": 0.1,
+                "data_wait_for_data_hist_buffer_size": 3,
+                "delta_t": 0.1,
+                "doppler_adaptive_in_loop_threshold": 4,
+                "kalman_inner_velocity_static_threshold": 2,
+                "l_value": 30,
+                "len_goodness_count": 10,
+                "low_doppler_m_out_of_n": 25,
+                "m_out_of_n": 15,
+                "n_value": 30,
+                "num_confirmed_measurements_threshold": 10,
+                "num_points_before_active_thr": 1,
+                "sigma_a": 0.01,
+                "stop_thr": 1,
+                "t_out_of_l": 25,
+                "l": 30,
+                "n": 30
+            }
+        }
+    }
+}

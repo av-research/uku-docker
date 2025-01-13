@@ -1,0 +1,8 @@
+prefix=/code/sm_ws/devel
+
+Name: urdf_calibration
+Description: Description of urdf_calibration
+Version: 0.0.0
+Cflags: -I/code/sm_ws/src/multi_sensor_calibration/urdf_calibration/include
+Libs: -L${prefix}/lib 
+Requires: 

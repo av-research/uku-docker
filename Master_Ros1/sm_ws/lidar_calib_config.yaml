@@ -1,0 +1,12 @@
+input_topic: "/velodyne_points"
+
+output_topic: "/lidar_0/pointcloud_filtered"
+
+boxes:
+  box0:
+    x: -1.17
+    y: .39
+    z: -1.56
+    a: 1.64
+    b: 1.79
+    c: 1.56

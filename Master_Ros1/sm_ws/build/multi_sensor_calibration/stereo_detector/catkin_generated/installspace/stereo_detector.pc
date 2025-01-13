@@ -1,0 +1,8 @@
+prefix=/code/sm_ws/install
+
+Name: stereo_detector
+Description: Description of stereo_detector
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

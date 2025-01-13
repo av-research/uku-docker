@@ -1,0 +1,17 @@
+All nodes run in ros noetic
+
+2024-04-18-15-51-22
+ - recorded with smartmicro DRG152 radar, velodyne VLP-16, logitech hd pro c920 usb camera, xsensMTi-7 IMU
+ - topics can be seen in sm_calib_rosbag_topics.txt
+ 
+2024-04-18-15-48-49
+ - recorded with zadar labs zSignal radar, velodyne VLP16, logitech hd pro c920 usb camera, xsensMTi-7 IMU
+ - topics can be seen in zadar_calib_rosbag_topics.txt
+
+x, y, z as described below: +x is towards front of UKU, +y is towards left of UKU (when facing from rear), +z up from ground
+-recorded in ros noetic
+- relative frame positions published with static transform
+ -base link at approximate centerpoint on ground beneath UKU
+ -zero point at center base of LiDAR pillar from top of UKU
+ 
+ Test pattern located 1.75 m +x from zero point as shown in test_setup.jpg

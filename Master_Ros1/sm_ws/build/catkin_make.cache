@@ -1,0 +1,2 @@
+transforms:velo2cam_calibration:xsens_ros_mti_driver
+-DCATKIN_DEVEL_PREFIX=/code/sm_ws/devel -DCMAKE_INSTALL_PREFIX=/code/sm_ws/install -G Unix Makefiles

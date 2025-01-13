@@ -1,0 +1,24 @@
+\subsubsection usage Usage
+\verbatim
+<node name="pc2_filter" pkg="umrr_driver" type="pc2_filter">
+  <param name="enable_filter_range" type="bool" value="False" />
+  <param name="min_range" type="double" value="0.0" />
+  <param name="max_range" type="double" value="175.0" />
+  <param name="enable_azimuth_filter" type="bool" value="False" />
+  <param name="min_azimuth_angle" type="double" value="-90.0" />
+  <param name="max_azimuth_angle" type="double" value="90.0" />
+  <param name="enable_elevation_filter" type="bool" value="False" />
+  <param name="min_elevation_angle" type="double" value="-90.0" />
+  <param name="max_elevation_angle" type="double" value="90.0" />
+  <param name="enable_radial_speed_filter" type="bool" value="False" />
+  <param name="min_radial_speed" type="double" value="-50.0" />
+  <param name="max_radial_speed" type="double" value="50.0" />
+  <param name="enable_rcs_filter" type="bool" value="False" />
+  <param name="min_rcs" type="double" value="-5.0" />
+  <param name="max_rcs" type="double" value="50.0" />
+  <param name="enable_snr_filter" type="bool" value="False" />
+  <param name="min_snr" type="double" value="0.0" />
+  <param name="max_snr" type="double" value="130.0" />
+</node>
+\endverbatim
+

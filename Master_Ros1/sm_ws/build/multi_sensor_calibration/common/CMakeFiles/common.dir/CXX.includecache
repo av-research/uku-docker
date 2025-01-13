@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/code/sm_ws/src/multi_sensor_calibration/common/include/common/robust_least_squares.hpp
+eigen3/Eigen/Dense
+-
+iostream
+-
+vector
+-
+iterator
+-
+limits
+-
+
+/code/sm_ws/src/multi_sensor_calibration/common/src/robust_least_squares.cpp
+robust_least_squares.hpp
+/code/sm_ws/src/multi_sensor_calibration/common/src/robust_least_squares.hpp
+
